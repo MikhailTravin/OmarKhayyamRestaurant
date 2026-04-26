@@ -236,6 +236,9 @@
         @media (max-width: 600px) {
             flex: 1 1 auto;
         }
+        &.form-file-input {
+            pointer-events: none;
+        }
         input,
         textarea {
             width: 100%;
@@ -278,6 +281,16 @@
             }
             @media (max-width: 550px) {
                 padding: 14px;
+            }
+        }
+        .btn {
+            min-width: 160px;
+            min-height: 50px;
+            @media (max-width: 600px) {
+                min-width: 100%;
+            }
+            @media (max-width: 550px) {
+                min-height: 45px;
             }
         }
     }

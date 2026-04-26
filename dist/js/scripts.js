@@ -1147,3 +1147,31 @@ if (filterButtons) {
     allButton.classList.add('active');
   }
 }
+
+//========================================================================================================================================================
+
+const browseButton = document.querySelector('.form-file-button');
+
+if (browseButton) {
+  const formFileInput = document.querySelector('.form-file');
+  const hiddenFileInput = document.querySelector('.form-file-button input[type="file"]');
+  browseButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    hiddenFileInput.click();
+  });
+
+  hiddenFileInput.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+  hiddenFileInput.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+
+    if (file) {
+      formFileInput.value = file.name;
+    } else {
+      formFileInput.value = '';
+    }
+  });
+}

@@ -342,8 +342,15 @@
                                         <input data-required autocomplete="off" type="text" name="form[]"
                                             placeholder="Ваш номер телефона">
                                     </div>
+                                    <div class="form__input form-file-input">
+                                        <input class="form-file" readonly data-required autocomplete="off" type="text"
+                                            name="form[]" placeholder="Выберите файл">
+                                    </div>
                                     <div class="form__input">
-                                        <textarea data-required name="form[]" placeholder="Ваше сообщение"></textarea>
+                                        <button type="button" class="form-file-button btn btn-transparent">
+                                            <input type="file">
+                                            <span>Обзор</span>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="form__buttons">
