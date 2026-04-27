@@ -393,14 +393,6 @@ a {
       background-color: #a7672d;
     }
   }
-  &.card-menu-other {
-    .card-menu__prices {
-      align-items: center;
-      flex-direction: row-reverse;
-      width: 100%;
-      justify-content: space-between;
-    }
-  }
   // .card-menu__pic1
 
   &__pic1 {
@@ -451,22 +443,10 @@ a {
 
   &__bottom {
     display: flex;
-    gap: 20px;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
-    .btn {
-      min-width: fit-content;
-      flex: 0 1 160px;
-    }
-  }
-
-  // .card-menu__prices
-
-  &__prices {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    gap: 6px;
+    gap: 10px;
     span {
       font-weight: 500;
       font-size: 12px;
@@ -479,6 +459,7 @@ a {
   // .card-menu__price
 
   &__price {
+    text-align: right;
     font-weight: 600;
     font-size: 14px;
     line-height: 160%;

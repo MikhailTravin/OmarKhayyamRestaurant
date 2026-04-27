@@ -1038,19 +1038,6 @@ a {
   opacity: 1;
   background-color: #a7672d;
 }
-.card-menu.card-menu-other .card-menu__prices {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .card-menu__pic1 {
   border-radius: 16px;
   height: 320px;
@@ -1106,34 +1093,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
-.card-menu__bottom .btn {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 160px;
-          flex: 0 1 160px;
-}
-.card-menu__prices {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  white-space: nowrap;
-  gap: 6px;
-}
-.card-menu__prices span {
+.card-menu__bottom span {
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
@@ -1141,6 +1110,7 @@ a {
   opacity: 0.7;
 }
 .card-menu__price {
+  text-align: right;
   font-weight: 600;
   font-size: 14px;
   line-height: 160%;
