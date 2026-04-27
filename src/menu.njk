@@ -17,19 +17,19 @@
                     <div class="header__body">
                         <ul>
                             <li>
-                                <a href="./">Главная</a>
+                                <a href="index.html">Главная</a>
                             </li>
                             <li>
-                                <a href="./" class="active">Меню</a>
+                                <a href="menu.html" class="active">Меню</a>
                             </li>
                             <li>
-                                <a href="./">Кальянная</a>
+                                <a href="hookah.html">Кальянная</a>
                             </li>
                             <li>
-                                <a href="./">Вакансии</a>
+                                <a href="vacancies.html">Вакансии</a>
                             </li>
                             <li>
-                                <a href="./">Контакты</a>
+                                <a href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="./" class="btn">
+                        <a href="./" data-popup="#forms" class="btn">
                             <span>Бронирование</span>
                         </a>
                         <button type="button" class="header__burger">
@@ -653,6 +653,7 @@
             </div>
         </footer>
     </div>
+    {% include 'blocks/popups.njk' %}
     {% include 'blocks/scripts.njk' %}
 </body>
 

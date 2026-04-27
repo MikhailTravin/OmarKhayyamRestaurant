@@ -393,6 +393,14 @@ a {
       background-color: #a7672d;
     }
   }
+  &.card-menu-other {
+    .card-menu__prices {
+      align-items: center;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
   // .card-menu__pic1
 
   &__pic1 {
